@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Web Ta</title>
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="tabelstyling.css">
+</head>
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">PinjamBarang</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="Data_Pemnjaman.html">Data Peminjaman</a></li>
+      <li><a class="active" href="#">Data Pengembalian</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+  
+  <div class="tittle">DATA PEMINJAMAN</div>
+  <div class="outer-wrapper">
+    <div class="table-wrapper">
+      <table>
+        <tr class="headertable">
+          <th>No</th>
+          <th>Nama</th>
+          <th>No Hp</th>
+          <th>Kelas</th>
+          <th>Jam</th>
+          <th>Tanggal</th>
+          <th>Barang</th>
+          <th>Aksi</th>
+        </tr>
+        
+        <tbody id="tbody"></tbody>
+      
+        <input type="hidden" id="id" />
+      </table>
+    </div>
+</div>
+
+
+
+
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.9.0/firebase-database.js"></script>
+  <script src="Data_Pengembalian.js"></script>
+</body>
+</html>
